@@ -1,26 +1,25 @@
+/* CONFIGURAÇÕES GERAIS */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    list-style: none;
     color: black;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-nav {
-    display: flex;
+/* CONFIGURAÇÕES Header */
+
+header {
+    display: flex; /*Alinha os itens dentro do Header lado a lado*/
     align-items: center;
     justify-content: space-between;
-
-
+    gap: 12px;
 }
+
+/* CONFIGURAÇÕES Header */
 
 img {
     width: 300px;
-}
-
-ul {
-    display: flex;
-    gap: 20px;
 }
