@@ -1,25 +1,80 @@
 /* CONFIGURAÇÕES GERAIS */
 
+/* Isso aqui importa uma fonte do Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    color: black;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    list-style: none;
+    font-family: "Work Sans";
+    font-weight: 700;
+    font-size: 18px;
 }
 
-/* CONFIGURAÇÕES Header */
+/* CONFIGURAÇÕES HEADER*/
 
 header {
     display: flex; /*Alinha os itens dentro do Header lado a lado*/
+    flex-direction: row; /*Indica em qual direção eles vão ficar lado a lado/ aqui é denifido que é em linha (row) na horizontal*/
     align-items: center;
     justify-content: space-between;
-    gap: 12px;
+    
+    padding: 8px 16px; /*é o espaço entre a borda e o conteudo interno*/
+
+    height: 53px; /*Define a altura do header*/
+    background-color: rgba(0,0,0,.9);
+
+    position: fixed; /*Faz com que o header sempre apareça na tela independentemente da rolagem da página*/
+
+    width: 100%; /*Faz com que ele sempre ocupe a largura total da página visivel (viewport)*/
+
 }
 
-/* CONFIGURAÇÕES Header */
-
 img {
-    width: 300px;
+    width: 44px; /*Define a largura da logo*/
+}
+
+ul {
+    display: flex;
+    gap: 18px; /*é o espaçamento entre um item da lista e outro*/
+}
+
+li {
+    padding: 6px 16px;
+    border-radius: 10px; /*Usado para arredondar os cantos*/
+}
+
+li:hover {
+    background-color: rgba(90, 90, 90, 0.295); /*O hover é uma pseudo classe (toda pseudo classe é definida com :) ele indica uma musança quando o mouse é passado por cima do elemento, nesse caso a cor de fundo é alterada*/
+}
+
+.btn {
+    padding: 6px 16px;
+
+    border-radius: 5px;
+    border: none;
+
+    font-size: 15px;
+}
+
+#entrar {
+    background-color: transparent;
+    color: white;
+}
+
+#entrar:hover {
+    background-color: rgba(90, 90, 90, 0.295);;
+}
+
+#assine {
+    background-color: white;
+    color: black;
+}
+
+#assine:hover {
+    background-color: rgb(173, 173, 173);
 }
